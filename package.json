@@ -1,0 +1,14 @@
+{
+  "name": "automation-test",
+  "version": "1.0.0",
+  "description": "E-commerce App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian D",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^6.8.0"
+  }
+}

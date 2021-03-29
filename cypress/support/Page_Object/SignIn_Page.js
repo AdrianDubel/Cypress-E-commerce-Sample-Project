@@ -1,0 +1,35 @@
+class signInLocators
+{
+
+    createAccountEmail()
+    {
+        return cy.get('#email_create')
+    }
+
+    submitCreate()
+    {
+        return cy.get('#SubmitCreate > span')
+    }
+
+    emailAlreadyRegister()
+    {
+        return cy.get('#SubmitCreate > span')
+    }
+
+    passwordAlreadyRegister()
+    {
+        return cy.get('#passwd')
+    }
+
+    forgotPassword()
+    {
+        return cy.get('.lost_password > a')
+    }
+
+    submitLogin()
+    {
+        return cy.get('#SubmitLogin > span')
+    }
+}
+
+export default signInLocators

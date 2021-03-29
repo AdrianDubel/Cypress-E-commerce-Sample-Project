@@ -1,0 +1,13 @@
+{
+    "baseUrl": "http://automationpractice.com/index.php",
+    "chromeWebSecurity": false,
+    "env": 
+    {
+        "username": "",
+        "password": ""
+    },
+
+    "defaultCommandTimeout": 10000,
+    "video": false
+
+}
