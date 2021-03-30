@@ -13,7 +13,7 @@ class signInLocators
 
     emailAlreadyRegister()
     {
-        return cy.get('#SubmitCreate > span')
+        return cy.get('#email')
     }
 
     passwordAlreadyRegister()

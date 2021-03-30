@@ -28,6 +28,8 @@ describe('Register new user', () => {
         registerpage.submitRegister().click()
 
         cy.url().should('contain', 'my-account')
-        cy.get('.page-heading').should('be.visible').and('contain', 'My account')      
+        cy.get('.page-heading')
+          .should('be.visible')
+          .and('contain', 'My account')      
     })
 })
