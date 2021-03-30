@@ -3,11 +3,13 @@
     "chromeWebSecurity": false,
     "env": 
     {
-        "username": "",
-        "password": ""
+        "username": "user+test@example.com",
+        "password": "pas123456"
     },
 
     "defaultCommandTimeout": 10000,
-    "video": false
+    "video": false,
+    "experimentalSourceRewriting": true
+
 
 }

@@ -101,3 +101,5 @@ class RegisterLocators
     }
 
 }
+
+export default RegisterLocators

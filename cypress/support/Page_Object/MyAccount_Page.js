@@ -24,4 +24,49 @@ class MyAccountLocators
     {
         return cy.get("[title='My wishlists'] > span")
     }
+
+    BackToAccount()
+    {
+        return cy.get('.footer_links > li:nth-of-type(1) span')
+    }
+
+    Home()
+    {
+        return cy.get(".btn[href='http://automationpractice.com/'] > span")
+    }
+
+    UpdateAddress()
+    {
+        return cy.get("[title='Update'] > span")
+    }
+
+    DeleteAddress()
+    {
+        return cy.get("[title='Delete'] > span")
+    }
+
+    AddNewAddress()
+    {
+        return cy.get("[title='Add an address'] > span")
+    }
+
+    BackToAddresses()
+    {
+        return cy.get("//span[contains(.,'Back to your addresses')]")
+    }
+
+    NewWishListName()
+    {
+        return cy.get("#name")
+    }
+
+    SaveWishlist()
+    {
+        return cy.get('#submitWishlist > span')
+    }
+
+    WishListDelete()
+    {
+        return cy.get('.wishlist_delete')
+    }
 }
