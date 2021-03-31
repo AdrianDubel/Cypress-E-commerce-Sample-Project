@@ -31,3 +31,17 @@ Cypress.Commands.add("createEmailRegister", () => {
     let email = "user+test" + getRandomInt(1, 100) + getRandomInt(1, 100) + getRandomInt(1, 100) + "@example.com"
     signIn.createAccountEmail().type(email)
 })
+
+Cypress.Commands.add("login", () => {
+
+    const homePage = new HomePageLocators()
+    const signin = new signInLocators()
+
+    let user_email = Cypress.env('username')
+    let password = Cypress.env('password')
+
+    homePage.signIn().click()
+    signin.emailAlreadyRegister().type(user_email, {log:false})
+    signin.passwordAlreadyRegister().type(password, {log: false})
+    signin.submitLogin().click()
+})

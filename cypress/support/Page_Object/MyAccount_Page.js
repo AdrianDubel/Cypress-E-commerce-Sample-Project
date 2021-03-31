@@ -1,5 +1,10 @@
 class MyAccountLocators
 {
+    SignOut()
+    {
+        return cy.get('.logout')
+    }
+
     OrderHistory()
     {
         return cy.get("[title='Orders'] > span")
@@ -70,3 +75,5 @@ class MyAccountLocators
         return cy.get('.wishlist_delete')
     }
 }
+
+export default MyAccountLocators

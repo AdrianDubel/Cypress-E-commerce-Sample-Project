@@ -10,15 +10,8 @@ describe('Test login with correct data', () => {
 
     it('Verfiy if login with correct data', () => {
 
-        let user_email = Cypress.env('username')
-        let password = Cypress.env('password')
-
         cy.visit('/index.php')
-        homepage.signIn().click()
-        signIn.emailAlreadyRegister().type(user_email, {log: false})
-        signIn.passwordAlreadyRegister().type(password, {log: false})
-        signIn.submitLogin().click()
-
+        cy.login()
         cy.url().should('contain', 'my-account')
         cy.get('.page-heading')
           .should('be.visible')
