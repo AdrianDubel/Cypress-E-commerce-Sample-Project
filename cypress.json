@@ -1,6 +1,12 @@
 {
     "baseUrl": "http://automationpractice.com/index.php",
     "chromeWebSecurity": false,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }, 
     "env": 
     {
         "username": "user+test@example.com",
@@ -11,6 +17,4 @@
     "defaultCommandTimeout": 10000,
     "video": false,
     "experimentalSourceRewriting": true
-
-
 }

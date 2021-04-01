@@ -4,11 +4,16 @@
   "description": "E-commerce App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:report": "node config.js"
   },
   "author": "Adrian D",
   "license": "ISC",
   "dependencies": {
     "cypress": "^6.8.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }
