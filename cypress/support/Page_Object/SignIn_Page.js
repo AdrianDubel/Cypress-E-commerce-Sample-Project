@@ -30,6 +30,11 @@ class signInLocators
     {
         return cy.get('#SubmitLogin > span')
     }
+
+    submitForgot()
+    {
+        return cy.get('.submit > .btn > span')
+    }
 }
 
 export default signInLocators

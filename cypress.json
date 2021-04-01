@@ -4,7 +4,8 @@
     "env": 
     {
         "username": "user+test@example.com",
-        "password": "pas123456"
+        "password": "pas123456",
+        "userForgotPass": "forgotpass@fo.com"
     },
 
     "defaultCommandTimeout": 10000,

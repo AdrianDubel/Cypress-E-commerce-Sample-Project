@@ -100,6 +100,11 @@ class RegisterLocators
         return cy.get('#submitAccount > span')
     }
 
+    Alert()
+    {
+        return cy.get('.alert')
+    }
+
 }
 
 export default RegisterLocators
