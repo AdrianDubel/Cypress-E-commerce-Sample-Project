@@ -1,5 +1,6 @@
 import HomePageLocators from '../support/Page_Object/Home_Page'
 import signInLocators from '../support/Page_Object/SignIn_Page'
+import PaymentLocators from '../support/Page_Object/Payment_Page'
 
 Cypress.Commands.add("search", data => {
 
@@ -44,4 +45,18 @@ Cypress.Commands.add("login", () => {
     signin.emailAlreadyRegister().type(user_email, {log:false})
     signin.passwordAlreadyRegister().type(password, {log: false})
     signin.submitLogin().click()
+})
+
+Cypress.Commands.add("placeOrder", () => {
+
+    const payment = new PaymentLocators()
+    
+    cy.contains('Add to cart').first().click()
+    payment.proceedToCheckout().click()
+    payment.proceedNext().click()
+    payment.proceedNext().click()
+    payment.termsChecbox().check()
+    payment.proceedNext().click()
+    payment.cart().click()
+    payment.confirmOrder().click()
 })

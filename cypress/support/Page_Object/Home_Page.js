@@ -43,6 +43,11 @@ class HomePageLocators
     {
         return cy.contains("Add to cart").first()
     }
+
+    account()
+    {
+        return cy.get('.account')
+    }
 }
 
 export default HomePageLocators
