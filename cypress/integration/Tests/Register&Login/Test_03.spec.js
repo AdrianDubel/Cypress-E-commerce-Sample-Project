@@ -1,13 +1,7 @@
 /// <reference types="cypress" />
 
-import HomePageLocators from "../../../support/Page_Object/Home_Page"
-import signInLocators from "../../../support/Page_Object/SignIn_Page"
-
 describe('Test login with correct data', () => {
     
-    const homepage = new HomePageLocators()
-    const signIn = new signInLocators()
-
     it('Verfiy if login with correct data', () => {
 
         cy.visit('/index.php')

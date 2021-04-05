@@ -20,7 +20,7 @@ describe('Register new user', () => {
         registerpage.FirstName().type('user')
         registerpage.LastName().type('UserSecond')
         registerpage.password().type('123456')
-        registerpage.addressStreet().type('Sample 12/2')
+        registerpage.addressStreet().type('C')
         registerpage.city().type('chicago')
         registerpage.stateDropDown().select('Alabama')
         registerpage.postcode().type('33500')
