@@ -60,11 +60,6 @@ class MyAccountLocators
         return cy.get("//span[contains(.,'Back to your addresses')]")
     }
 
-    NewWishListName()
-    {
-        return cy.get("#name")
-    }
-
     SaveWishlist()
     {
         return cy.get('#submitWishlist > span')
@@ -73,6 +68,11 @@ class MyAccountLocators
     WishListDelete()
     {
         return cy.get('.wishlist_delete')
+    }
+
+    WishListName()
+    {
+        return cy.get('#name')
     }
 }
 

@@ -35,6 +35,21 @@ class signInLocators
     {
         return cy.get('.submit > .btn > span')
     }
+
+    oldPass()
+    {
+        return cy.get('#old_passwd')
+    }
+
+    passConfirm()
+    {
+        return cy.get('#confirmation')
+    }
+
+    saveUpdate()
+    {
+        return cy.get(':nth-child(11) > .btn > span')
+    }
 }
 
 export default signInLocators
