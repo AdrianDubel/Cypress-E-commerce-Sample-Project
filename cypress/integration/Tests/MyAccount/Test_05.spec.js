@@ -1,17 +1,13 @@
 /// <reference types="cypress" />
 
-import HomePageLocators from "../../../support/Page_Object/Home_Page"
 import MyAccountLocators from "../../../support/Page_Object/MyAccount_Page"
-import RegisterLocators from "../../../support/Page_Object/Register_Page"
-import signInLocators from "../../../support/Page_Object/SignIn_Page"
+import ProductLocators from "../../../support/Page_Object/Product_Page"
 
 describe('Create new wishlist add product and verify if list is updated with correct product', () => {
 
-    const homePage = new HomePageLocators()
-    const signin = new signInLocators()
     const myaccount = new MyAccountLocators()
-    const registerPage = new RegisterLocators()
-
+    const product = new ProductLocators()
+    
     it('Test update wishlist', () => {
 
         cy.visit('/index.php')
@@ -32,7 +28,6 @@ describe('Create new wishlist add product and verify if list is updated with cor
           .should('be.visible')
           .and('contain', 'randomwishlist')
 
-        cy.get('.icon-remove').click()
-
+        product.remove().click()
     })
 })
