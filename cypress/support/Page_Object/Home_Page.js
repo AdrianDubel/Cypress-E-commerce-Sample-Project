@@ -21,7 +21,7 @@ class HomePageLocators
 
     shoppingCart()
     {
-        return cy.get('.shopping_cart')
+        return cy.get('[title="View my shopping cart"]')
     }
 
     womenCategory()
@@ -47,6 +47,11 @@ class HomePageLocators
     account()
     {
         return cy.get('.account')
+    }
+
+    emptyCard()
+    {
+        return cy.get('.ajax_cart_no_product')
     }
 }
 

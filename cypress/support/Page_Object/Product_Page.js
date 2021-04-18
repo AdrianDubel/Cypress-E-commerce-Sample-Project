@@ -35,6 +35,21 @@ class ProductLocators
         return cy.get('#new_comment_tab_btn > span')
     }
 
+    closePopUp()
+    {
+        return cy.get('.cross')
+    }
+
+    productName()
+    {
+        return cy.get('.cart_description > .product-name > a')
+    }
+
+    deleteProduct()
+    {
+        return cy.get("[data-title='Delete']")
+    }
+
 }
 
 export default ProductLocators
