@@ -29,6 +29,11 @@ class PaymentLocators
     {
        return cy.get('#id_address_delivery')
     }
+
+    backToOrders()
+    {
+        return cy.get('.button-exclusive')
+    }
 }
 
 export default PaymentLocators
