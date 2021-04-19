@@ -24,6 +24,11 @@ class PaymentLocators
     {
         return cy.get('#cart_navigation > .button > span')
     }
+
+    addressDropDown()
+    {
+       return cy.get('#id_address_delivery')
+    }
 }
 
 export default PaymentLocators
