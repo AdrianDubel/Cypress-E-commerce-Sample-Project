@@ -1,16 +1,12 @@
 /// <reference types="cypress" />
 
-import RegisterLocators from "../../../support/Page_Object/Register_Page"
 import MyAccountLocators from "../../../support/Page_Object/MyAccount_Page"
-import HomePageLocators from "../../../support/Page_Object/Home_Page"
 import ProductLocators from "../../../support/Page_Object/Product_Page"
 import PaymentLocators from "../../../support/Page_Object/Payment_Page"
 
 describe('Click "reorder" and verify if the same product is choose', () => {
 
-    const registerLocators = new RegisterLocators()
     const myaccount = new MyAccountLocators()
-    const homepage = new HomePageLocators()
     const product_page = new ProductLocators()
     const payment = new PaymentLocators()
 
