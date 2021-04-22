@@ -1,7 +1,6 @@
 # Cypress-E-commerce-Sample-Project
 
-
-![image](https://user-images.githubusercontent.com/65505707/115717857-e055f780-a37a-11eb-8cbc-3b6e864e34bb.png)
+![image](https://user-images.githubusercontent.com/65505707/115718711-ad603380-a37b-11eb-8135-f0306452258c.png)
 
 
 Sample test automation project written with Cypress using Page Object Model and Cypress Commands. As a reporter, I also added ```mochawesome report``` to get the final report after running all tests. Project  written for the [automationpractice.com](http://automationpractice.com/) which is e-commerce website. It covers the complete online shopping workflow. So there is a lot of back and forth between server and client, lots of validations built into it to give a complete experience to practice the scenarios might find in real time projects.
