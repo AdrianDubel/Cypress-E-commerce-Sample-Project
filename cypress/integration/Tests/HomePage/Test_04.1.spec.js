@@ -20,6 +20,7 @@ describe('Test search product function', () => {
           .find('.product-container')
           .should('have.length', count)
           .and('contain', "Printed Dress")
+          
         })
     })
 })
