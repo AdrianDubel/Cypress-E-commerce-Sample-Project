@@ -4,7 +4,7 @@
   "description": "E-commerce App",
   "main": "index.js",
   "scripts": {
-    "test:report": "node config.js"
+    "test:report": "node run-tests-report.js"
   },
   "author": "Adrian D",
   "license": "ISC",

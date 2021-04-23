@@ -4,13 +4,13 @@ import HomePageLocators from "../../../support/Page_Object/Home_Page"
 import RegisterLocators from "../../../support/Page_Object/Register_Page"
 import signInLocators from "../../../support/Page_Object/SignIn_Page"
 
-describe('Provide less than 5 characters in "password" field and verify if error is displated', () => {
+describe('Provide less than 5 characters in "password" field and verify if error is displayed', () => {
 
     const homepage = new HomePageLocators()
     const registerpage = new RegisterLocators()
     const signIn = new signInLocators()
 
-    it('Test - Provide less than 5 characters in "password" field and verify if error is displated', () => {
+    it('Test - Provide less than 5 characters in "password" field and verify if error is displayed', () => {
 
         cy.visit('/index.php')
         homepage.signIn().click()

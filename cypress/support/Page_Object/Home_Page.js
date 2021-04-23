@@ -53,6 +53,16 @@ class HomePageLocators
     {
         return cy.get('.ajax_cart_no_product')
     }
+
+    moreButton()
+    {
+        return cy.contains('More').first()
+    }
+
+    fancyBoxError()
+    {
+        return cy.get('.fancybox-error')
+    }
 }
 
 export default HomePageLocators
