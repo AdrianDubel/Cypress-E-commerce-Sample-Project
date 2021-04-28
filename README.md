@@ -14,3 +14,19 @@ The test cases are divided into the following categories:
 - Home Page
 
 In the specified folder "Documents" you can find all test cases for this project and a sample report after all tests have been performed. 
+
+## Installation
+
+To run project:
+
+```bash
+- Install node.js
+- npm init ( to create package.json)
+- npm install cypress --save-dev
+```
+To generate repot:
+
+```bash
+- npm install mochawesome --save-dev
+- npm install mochawesome-merge --save-dev
+- npm install mochawesome-report-generator --save-dev
