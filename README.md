@@ -30,3 +30,5 @@ To generate repot:
 - npm install mochawesome --save-dev
 - npm install mochawesome-merge --save-dev
 - npm install mochawesome-report-generator --save-dev
+```
+Create new file ```config.js``` and put there code which you can find in ```run-tests-report.js``` file in this repository. To run your tests and create HTML report type in in terminal "node config.js" and press enter. When all of your tests will finish, report will be create automatically in new folder "mochawesome-report"
