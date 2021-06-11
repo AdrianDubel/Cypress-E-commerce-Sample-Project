@@ -1,6 +1,6 @@
 from node:15.10.0
 
-WORKDIR /tests
+WORKDIR /Cypress-E-commerce-Sample-Project
 
 COPY package.json ./
 
