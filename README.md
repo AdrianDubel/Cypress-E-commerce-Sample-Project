@@ -26,4 +26,6 @@ In the specified folder "Documents" you can find all test cases for this project
 To run project:
 To install project dependencies, just type```bash npm i``` on the project root.
 
+## Create Report
+
 Create new file ```config.js``` and put there code which you can find in ```run-tests-report.js``` file in this repository. To run your tests and create HTML report type in in terminal ```node config.js``` and press enter. When all of your tests will finish, report will be create automatically in new folder "mochawesome-report"
